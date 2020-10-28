@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Experiment4</title>
+</head>
+<body align ="center">
+    
+<script>
+    function addition()
+        {
+            var a = document.getElementById("s1").value;
+            var b = document.getElementById("s2").value;
+            var c = document.getElementById("s3").value;
+            var d = document.getElementById("s4").value;
+            var e = document.getElementById("s5").value;
+        
+            var total = parseInt(a)+parseInt(b)+parseInt(c)+parseInt(d)+parseInt(e);
+                
+            document.getElementById("math").innerHTML="Total:" +total;
+            var per = total/500 * 100;
+            document.getElementById("pip").innerHTML="Percentage:" +per;
+    
+            if(per>=75)
+            {
+                document.getElementById("lip").innerHTML="Grade:Distinction";
+            }
+            else if(per>=60 && per<75)
+            {
+                document.getElementById("lip").innerHTML="Grade:First Class";
+            }
+            else if(per>=50 && per<60)
+            {
+                document.getElementById("lip").innerHTML="Grade:Second Class";
+            }
+            else if(per>=40 && per<50)
+            {
+                document.getElementById("lip").innerHTML="Grade:Pass";
+            }
+            else
+            {
+                document.getElementById("lip").innerHTML="Grade:Fail";
+            }
+            document.getElementById('s1').disabled=true;
+            document.getElementById('s2').disabled=true;
+            document.getElementById('s3').disabled=true;
+            document.getElementById('s4').disabled=true;
+            document.getElementById('s5').disabled=true;
+            document.getElementById('n1').disabled=true;
+            document.getElementById('n2').disabled=true;
+            document.getElementById('n3').disabled=true;
+        }
+            
+</script>
+<hr><hr>
+<h1>UNIVERSITY OF MUMBAI</h1>
+<h2>Student Details</h2>
+<form name=add>
+    Name:Atharva Chiplunkar
+    <br>
+    <br>
+    Year: TE CMPNA
+    <br>
+    <br>
+    Sem: 5
+    <br>
+    <br>
+    Roll No: 12
+    <br>
+    <br>
+    <hr><hr>
+<h2>Marks</h2>
+
+<form name=add>
+Subject 1:<input type="text" id="s1">
+<br>
+<br>
+Subject 2:<input type="text" id="s2">
+<br>
+<br>
+Subject 3:<input type="text" id="s3">
+<br>
+<br>
+Subject 4:<input type="text" id="s4">
+<br>
+<br>
+Subject 5:<input type="text" id="s5">
+<br>
+<br>
+<button type="button" onclick="addition()">Submit</button>
+</form>
+<br>
+<p id='math'></p>
+<p id='pip'></p>
+<p id='lip'></p>
+
+</body>
+</html>

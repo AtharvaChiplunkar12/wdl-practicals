@@ -1,0 +1,37 @@
+<html>
+<body>
+<section style="text-align: center;">	
+<div id="urgent"><h1>Hello World!</h1>
+<h2>My name is Atharva !!!<h2></div>
+</section>
+<section>
+	<p><strong>All the Characters will automatically become Uppercase</p>
+Enter your name:</strong><input type="text" id="fname" onkeyup="myFunction()">
+</section>
+
+<section>
+	<img id="theimage" onmousedown="imageOne()" onmouseup="imageTwo()" src="pic_bulboff.gif">
+<p>Click to change image</p>
+</section>
+<script>
+var e=document.getElementById("urgent");
+var colors=["purple","yellow","orange","red","blue"];
+var nextColor=0;
+setInterval("e.style.backgroundColor=colors[nextColor++%colors.length];",500);
+function myFunction()
+{
+ var x=document.getElementById("fname");
+ x.value=x.value.toUpperCase();
+}
+
+function imageOne()
+{
+  document.getElementById('theimage').src="pic_bulboff.gif"
+}
+ function imageTwo()
+{
+  document.getElementById('theimage').src="pic_bulbon.gif"
+}
+</script>
+</body>
+</html>

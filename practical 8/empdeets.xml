@@ -1,0 +1,65 @@
+<?xml version="1.0"?> 
+<!DOCTYPE studentdetails[ 
+<!ELEMENT 
+employeedetails (employee)> 
+<!ELEMENT employee (empid,empname,salary,dob,doj,address,deptname,designation)> 
+<!ELEMENT empid (#PCDATA)> 
+<!ELEMENT empname (#PCDATA)> 
+<!ELEMENT salary (#PCDATA)> 
+<!ELEMENT dob (#PCDATA)> 
+<!ELEMENT doj (#PCDATA)> 
+<!ELEMENT address (#PCDATA)> 
+<!ELEMENT deptname (#PCDATA)> 
+<!ELEMENT designation (#PCDATA)>
+]> 
+<?xml-stylesheet type="text/xsl" href="internal1.xsl"?> <employeedetails> 
+<employee> 
+<empid>12</empid> 
+<empname>Atharva</empname> 
+<salary>100000</salary> 
+<dob>12/03/2000</dob> 
+<doj>24/07/2020</doj> 
+<address>Kandivali</address> 
+<deptname>HR</deptname> 
+<designation>Manager</designation> 
+</employee> 
+<employee> 
+<empid>24</empid> 
+<empname>Mohit</empname> 
+<salary>150000</salary> 
+<dob>07/04/2000</dob> 
+<doj>31/08/2020</doj> 
+<address>Andheri-East</address> 
+<deptname>Marketing</deptname> 
+<designation>Director</designation> 
+</employee>
+<employee> 
+<empid>66</empid> 
+<empname>Kapil</empname> 
+<salary>200000</salary> 
+<dob>22/03/2020</dob> 
+<doj>12/06/2020</doj> 
+<address>Virar</address> 
+<deptname>Finance</deptname> 
+<designation>DGM</designation> 
+</employee> 
+<employee> 
+<empid>19</empid> 
+<empname>Rajat</empname> 
+<salary>100000</salary> 
+<dob>07/11/2000</dob> 
+<doj>27/09/2020</doj> 
+<address>Colaba</address> 
+<deptname>RnD</deptname> 
+<designation>Executive Director</designation> </employee> 
+<employee> 
+<empid>30</empid> 
+<empname>Sumeet</empname>
+<salary>90000</salary> 
+<dob>01/01/2000</dob> 
+<doj>23/04/2020</doj> 
+<address>Bandra</address> 
+<deptname>Aviation</deptname> 
+<designation>PS</designation> 
+</employee> 
+</employeedetails> 
